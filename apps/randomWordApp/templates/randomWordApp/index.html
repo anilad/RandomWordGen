@@ -13,5 +13,9 @@
         {% csrf_token %}
         <button type="submit">Generate</button>
     </form>
+    <form action="/reset" method="post">
+        {% csrf_token %}
+        <button type="submit">Reset</button>
+    </form>
 </body>
 </html>

@@ -15,3 +15,7 @@ def index(request):
 def process(request):
     request.session['key']+= 1
     return redirect('/')
+
+def reset(request):
+    request.session['key']=1
+    return redirect('/')
